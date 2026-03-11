@@ -1,4 +1,8 @@
-﻿namespace Assignment_OOP_5
+﻿using Assignment_OOP_5.Classes;
+using Assignment_OOP_5.Enum;
+using Assignment_OOP_5.Interfaces;
+
+namespace Assignment_OOP_5
 {
     internal class Program
     {
@@ -48,6 +52,56 @@
             //MemberwiseClone() performs a shallow copy
             //Title is copied as a separate value,Dept is a reference type, so both e1 and e2 refer to the same Department object
             //Dept is shared between both objects due to the shallow copy
+            #endregion
+            #region Question 5
+            //Cinema cinema = new Cinema();
+
+            //cinema.OpenCinema();
+
+            //SeatLocation seat = new SeatLocation(TypeOfTicket.A, 5);
+
+            //StandardTicket t1 = new StandardTicket("Inception", 80, seat);
+            //VIPTicket t2 = new VIPTicket("Avengers", 200, true);
+            //IMAXTicket t3 = new IMAXTicket("Dune", 130, true);
+
+            //t1.Book();
+            //t2.Book();
+            //t3.Book();
+
+            //cinema.AddTicket(t1);
+            //cinema.AddTicket(t2);
+            //cinema.AddTicket(t3);
+
+            //cinema.PrintAllTickets();
+
+            //Console.WriteLine("\n--- Clone Test ---");
+
+            //VIPTicket clone = (VIPTicket)t2.Clone();
+            //clone.MovieName = "Interstellar";
+
+            //Console.Write("Original : ");
+            //t2.Print();
+
+            //Console.Write("Clone    : ");
+            //clone.Print();
+
+            //Console.WriteLine("\n--- After Cancellation ---");
+
+            //t1.Cancel();
+            //t1.Print();
+
+            //IPrintable[] printableTickets =
+            //{
+
+            //    t1,
+            //    t2,
+            //    t3
+            //};
+
+            //BookingHelper.PrintAll(printableTickets);
+
+            //cinema.CloseCinema();
+
             #endregion
         }
     }
