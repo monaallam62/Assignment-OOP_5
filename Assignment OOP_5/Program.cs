@@ -27,6 +27,18 @@
             //IArabicSpeaker ar = new Translator();
             //ar.Greet(); // Ahlan
             #endregion
+            #region Question 3
+            //Q3 : Explain the difference between a shallow copy and a deep copy. When would you use each one? What is the risk of using a shallow copy when the object has reference-type fields?
+            //Shallow Copy
+            //A shallow copy creates a new object but copies only the values of the fields ,If a field is a reference type, only the reference is copied, not the actual object both objects will reference the same inner object
+            //Deep Copy
+            //A deep copy creates a completely independent copy of the object, including all referenced objects,Changes to one object do not affect the other
+            //------------------------------------------------------------
+            //Shallow → object is immutable, no nested reference state, performance is critical
+            //Deep → objects must be isolated, modifications should not affect original
+            //------------------------------------------------------------
+            //If the object contains reference-type fields, modifying the referenced object in one copy will affect the other copy because both references point to the same object.
+            #endregion
         }
     }
 }
