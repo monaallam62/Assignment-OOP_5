@@ -22,5 +22,5 @@ namespace Assignment_OOP_5.Classes
     //        Console.WriteLine($"[Ticket #{TicketId}] {MovieName} | Standard | Seat: {Seat} | Price: {Price} | After Tax: {PriceAfterTax} | Booked: {(isBooked ? "Yes" : "No")}");
     //    }
     //}
-    //#endregion
+    #endregion
 }
