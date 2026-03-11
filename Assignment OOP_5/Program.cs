@@ -39,6 +39,16 @@
             //------------------------------------------------------------
             //If the object contains reference-type fields, modifying the referenced object in one copy will affect the other copy because both references point to the same object.
             #endregion
+            #region Question 4
+            //Q4 : Look at the following code and determine the output. Explain why
+            //Final Output:
+            //Dev - Testing
+            //QA - Testing
+            //Explanation
+            //MemberwiseClone() performs a shallow copy
+            //Title is copied as a separate value,Dept is a reference type, so both e1 and e2 refer to the same Department object
+            //Dept is shared between both objects due to the shallow copy
+            #endregion
         }
     }
 }
